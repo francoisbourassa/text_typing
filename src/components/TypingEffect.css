@@ -5,14 +5,30 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 0 20px; /* Ajout d'un rembourrage pour éviter que le texte ne touche les bords */
 }
 
 .typing-effect h1 {
   display: inline;
+  text-align: center; /* Ajout pour centrer le texte pour les petits écrans */
 }
 
 .typing-effect span {
   animation: blink 1s infinite;
+}
+
+/* Pour tablettes */
+@media (max-width: 768px) {
+  .typing-effect {
+    font-size: 1.5rem;
+  }
+}
+
+/* Pour mobiles */
+@media (max-width: 480px) {
+  .typing-effect {
+    font-size: 1rem;
+  }
 }
 
 @keyframes blink {
