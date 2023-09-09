@@ -1,0 +1,25 @@
+.typing-effect {
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.typing-effect h1 {
+  display: inline;
+}
+
+.typing-effect span {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
